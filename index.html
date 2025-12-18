@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyotishacharya Pandit Nirmal Upadhyay | Vedic Astrologer Ujjain</title>
+    <meta name="description" content="Best Vedic Astrologer in Ujjain. Kundli Vishleshan, Mangal Dosh, Kalsarpa Dosh, Puja Anushthan by Jyotishacharya Pandit Nirmal Upadhyay.">
+    <meta name="keywords" content="Jyotish Ujjain, Kundli, Puja, Astrologer Nirmal Upadhyay, Vedic Astrology, Kalsarpa Shanti, Mangal Dosh">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#FF9933',      /* Bhagwa */
+                        deepRed: '#800000',      /* Maroon/Raktha */
+                        gold: '#FFD700',         /* Swarna */
+                        royalBlue: '#1a237e',    /* Neel */
+                        cream: '#FFFDD0',        /* Background */
+                        offWhite: '#fdfbf7'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif Devanagari"', 'serif'],
+                        sans: ['"Poppins"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'mandala': "url('https://www.transparenttextures.com/patterns/binding-dark.png')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fdfbf7;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(128, 0, 0, 0.2);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFFDD0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #800000;
+        }
+        .om-symbol::before {
+            content: "🕉";
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: #FF9933;
+        }
+        .image-card {
+            min-height: 150px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-serif text-gray-800 antialiased overflow-x-hidden relative">
+
+    <!-- Top Bar -->
+    <div class="bg-deepRed text-white py-2 text-sm">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-2 md:mb-0">
+                <i class="fas fa-om text-gold mr-2"></i> श्री गणेशाय नमः | शुभं करोति कल्याणं
+            </div>
+            <div class="flex gap-4">
+                <a href="tel:+919343838789" class="hover:text-gold transition"><i class="fas fa-phone-alt mr-1"></i> +91 9343838789</a>
+                <a href="mailto:nirmalupadhyay897@gmail.com" class="hover:text-gold transition"><i class="fas fa-envelope mr-1"></i> nirmalupadhyay897@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 border-b-4 border-saffron">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo Area -->
+            <div class="flex items-center">
+                <div class="text-3xl text-deepRed mr-3"><i class="fas fa-sun fa-spin-pulse" style="--fa-animation-duration: 10s;"></i></div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-deepRed leading-tight">ज्योतिषाचार्य पं. निर्मल उपाध्याय</h1>
+                    <p class="text-xs md:text-sm text-saffron font-semibold">M.A. (Jyotish Vigyan) | वैदिक ज्योतिष एवं अनुष्ठान केंद्र</p>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-deepRed text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 font-semibold text-deepRed">
+                <a href="#home" class="hover:text-saffron transition border-b-2 border-transparent hover:border-saffron">होम (Home)</a>
+                <a href="#about" class="hover:text-saffron transition border-b-2 border-transparent hover:border-saffron">परिचय (About)</a>
+                <a href="#services" class="hover:text-saffron transition border-b-2 border-transparent hover:border-saffron">सेवाएं (Services)</a>
+                <a href="#consultation" class="hover:text-saffron transition border-b-2 border-transparent hover:border-saffron">परामर्श (Consultation)</a>
+                <a href="#contact" class="hover:text-saffron transition border-b-2 border-transparent hover:border-saffron">संपर्क (Contact)</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-saffron">
+            <a href="#home" class="block py-2 px-4 text-deepRed hover:bg-saffron hover:text-white" onclick="toggleMenu()">होम</a>
+            <a href="#about" class="block py-2 px-4 text-deepRed hover:bg-saffron hover:text-white" onclick="toggleMenu()">परिचय</a>
+            <a href="#services" class="block py-2 px-4 text-deepRed hover:bg-saffron hover:text-white" onclick="toggleMenu()">सेवाएं</a>
+            <a href="#consultation" class="block py-2 px-4 text-deepRed hover:bg-saffron hover:text-white" onclick="toggleMenu()">परामर्श</a>
+            <a href="#contact" class="block py-2 px-4 text-deepRed hover:bg-saffron hover:text-white" onclick="toggleMenu()">संपर्क</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-deepRed text-white py-20 md:py-32">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('https://www.transparenttextures.com/patterns/black-scales.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-deepRed to-orange-900 opacity-90"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <div class="inline-block bg-saffron text-white px-3 py-1 rounded-full text-sm mb-4 font-sans tracking-wide">
+                    🚩 जय महाकाल
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight text-shadow">
+                    वैदिक ज्योतिष एवं अनुष्ठान के माध्यम से <span class="text-gold">जीवन की समस्याओं का समाधान</span>
+                </h2>
+                <p class="text-lg md:text-xl mb-8 text-gray-200 font-sans">
+                    विश्वसनीय एवं अनुभवी पंडित द्वारा अपनी जन्मपत्रिका का सटीक विश्लेषण करवाएं और दोषों का निवारण प्राप्त करें।
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="tel:+919343838789" class="bg-gold text-deepRed px-8 py-3 rounded-md font-bold hover:bg-yellow-400 transition shadow-lg text-center">
+                        <i class="fas fa-phone-alt mr-2"></i> अभी कॉल करें
+                    </a>
+                    <a href="#consultation" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-deepRed transition shadow-lg text-center">
+                        <i class="fas fa-calendar-check mr-2"></i> कुंडली विश्लेषण
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Image / Astrologer Photo - Set to gurujiprofile.jpg -->
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-gold p-2 shadow-2xl bg-white overflow-hidden">
+                   <div class="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-gray-500 overflow-hidden">
+                        <!-- Updated to gurujiprofile.jpg -->
+                        <img 
+                            src="gurujiprofile.jpg" 
+                            alt="Jyotishacharya Pandit Nirmal Upadhyay" 
+                            class="object-cover w-full h-full transform transition duration-500 hover:scale-105"
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x400/FF9933/800000?text=Pandit+Nirmal\nUpadhyay';"
+                        >
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-offWhite">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-saffron text-lg font-bold uppercase tracking-wider mb-2">गुरुजी के बारे में</h3>
+                <h2 class="text-3xl md:text-4xl font-bold text-deepRed">ज्योतिषाचार्य पं. निर्मल उपाध्याय</h2>
+                <div class="w-24 h-1 bg-saffron mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 p-6 bg-white rounded-lg shadow-lg border-t-4 border-saffron">
+                    <p class="text-gray-700 leading-relaxed mb-4 text-lg text-justify">
+                        ज्योतिषाचार्य पंडित निर्मल उपाध्याय उज्जैन (मध्य प्रदेश) के एक प्रतिष्ठित वैदिक ज्योतिषी और कर्मकांडी ब्राह्मण हैं। आपको वैदिक ज्योतिष और अनुष्ठान का गहरा ज्ञान और वर्षों का अनुभव प्राप्त है।
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4 text-lg text-justify">
+                        हमारा उद्देश्य केवल भविष्यवाणी करना नहीं, बल्कि **वेदोक्त पद्धति** और **शास्त्रीय विधि** से यजमानों की समस्याओं का सटीक निवारण करना है। चाहे वह कुंडली दोष हो, विवाह में बाधा हो, या गृह शांति, हम पूर्ण सात्विकता और पवित्रता के साथ पूजा संपन्न कराते हैं।
+                    </p>
+                    <ul class="space-y-2 mt-6 font-semibold text-deepRed">
+                        <li><i class="fas fa-graduation-cap text-saffron mr-2"></i> M.A. (Jyotish Vigyan) - ज्योतिष विज्ञान में स्नातकोत्तर</li>
+                        <li><i class="fas fa-check-circle text-saffron mr-2"></i> वैदिक ज्योतिष विशेषज्ञ</li>
+                        <li><i class="fas fa-check-circle text-saffron mr-2"></i> कालसर्प एवं मंगल दोष निवारण विशेषज्ञ</li>
+                        <li><i class="fas fa-check-circle text-saffron mr-2"></i> उज्जैन की प्राचीन परंपरा अनुसार अनुष्ठान</li>
+                    </ul>
+                </div>
+                
+                <!-- Image Cards for Puja Visuals -->
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-saffron bg-opacity-10 rounded-lg text-center border border-saffron overflow-hidden shadow-md">
+                        <div class="image-card">
+                            <img 
+                                src="ourpuja1.jpg" 
+                                alt="Kaalsarp Dosh Anusthan Puja" 
+                                class="object-cover w-full h-full transition duration-500 hover:scale-105"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x200/800000/FFF?text=Kaalsarp+Puja';"
+                            >
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-bold text-lg text-deepRed">कालसर्प दोष अनुष्ठान</h4>
+                            <p class="text-xs text-gray-600">उज्जैन में शास्त्रीय विधि द्वारा</p>
+                        </div>
+                    </div>
+                    <div class="bg-saffron bg-opacity-10 rounded-lg text-center border border-saffron overflow-hidden shadow-md">
+                        <div class="image-card">
+                            <img 
+                                src="ourpuja2.jpg" 
+                                alt="Mangal Bhaat Puja" 
+                                class="object-cover w-full h-full transition duration-500 hover:scale-105"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x200/FF9933/800000?text=Mangal+Bhat+Puja';"
+                            >
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-bold text-lg text-deepRed">मंगल भात पूजा</h4>
+                            <p class="text-xs text-gray-600">दाम्पत्य सुख हेतु विशेष पूजा</p>
+                        </div>
+                    </div>
+                    <div class="bg-saffron bg-opacity-10 rounded-lg text-center border border-saffron overflow-hidden shadow-md col-span-2 md:col-span-1">
+                         <div class="image-card">
+                            <img 
+                                src="ourpuja3.jpg" 
+                                alt="Navagraha Shanti Jaap" 
+                                class="object-cover w-full h-full transition duration-500 hover:scale-105"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x200/800000/FFF?text=Navagraha+Jaap';"
+                            >
+                         </div>
+                         <div class="p-3">
+                            <h4 class="font-bold text-lg text-deepRed">नवग्रह शांति जप</h4>
+                            <p class="text-xs text-gray-600">ग्रहों की अनुकूलता के लिए</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center border border-saffron shadow-md col-span-2 md:col-span-1 flex flex-col justify-center">
+                        <i class="fas fa-hand-holding-heart text-4xl text-deepRed mb-3"></i>
+                        <h4 class="font-bold text-lg text-deepRed">विश्वसनीय उपाय</h4>
+                        <p class="text-sm text-gray-600">सरल और प्रभावी दोष निवारण</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-cream relative">
+        <div class="absolute inset-0 opacity-5" style="background-image: url('https://www.transparenttextures.com/patterns/flower-trail.png');"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h3 class="text-saffron text-lg font-bold uppercase tracking-wider mb-2">पूजा एवं अनुष्ठान</h3>
+                <h2 class="text-3xl md:text-4xl font-bold text-deepRed">हमारी सेवाएं (Services)</h2>
+                <div class="w-24 h-1 bg-saffron mx-auto mt-4"></div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-deepRed p-4 mb-10 max-w-3xl mx-auto shadow-md">
+                <p class="text-center text-deepRed font-semibold text-lg">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    सभी पूजा-अनुष्ठान वेदोक्त पद्धति द्वारा, शास्त्रीय विधि एवं अनुभवशाली पंडित के द्वारा संपन्न कराये जाते हैं।
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-scroll"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">हस्तलिखित जन्मपत्रिका</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Handwritten Birth Chart</p>
+                    <p class="text-gray-600 text-sm">सम्पूर्ण जीवन का विस्तृत भविष्यफल और ग्रह स्थिति का निर्माण।</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-star-and-crescent"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">कुंडली विश्लेषण</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Horoscope Analysis</p>
+                    <p class="text-gray-600 text-sm">शिक्षा, करियर, विवाह और स्वास्थ्य संबंधित समस्याओं का सटीक समाधान।</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-fire-alt"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">मंगल दोष निवारण</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Mangal Dosha Puja</p>
+                    <p class="text-gray-600 text-sm">विवाह में देरी और दांपत्य जीवन की समस्याओं के लिए विशेष भात पूजा।</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-dragon"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">कालसर्प दोष निवारण</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Kaal Sarp Dosha Shanti</p>
+                    <p class="text-gray-600 text-sm">जीवन में संघर्ष और अस्थिरता को दूर करने के लिए विशेष अनुष्ठान।</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-sun"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">अर्क विवाह / कुम्भ विवाह</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Ark Vivah & Kumbh Vivah</p>
+                    <p class="text-gray-600 text-sm">वैवाहिक दोषों को दूर करने के लिए शास्त्र सम्मत विवाह पद्धति।</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-globe-asia"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">नवग्रह शांति जप</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Navagraha Peace Ritual</p>
+                    <p class="text-gray-600 text-sm">सभी नौ ग्रहों की शांति और शुभ फल प्राप्ति हेतु जप अनुष्ठान।</p>
+                </div>
+
+                <!-- Additional cards... -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-om"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">महामृत्युंजय जप</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Mahamrityunjaya Mantra Jaap</p>
+                    <p class="text-gray-600 text-sm">स्वास्थ्य लाभ और अकाल मृत्यु भय निवारण हेतु।</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-home"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">वास्तु दोष निवारण</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Vastu Remedies</p>
+                    <p class="text-gray-600 text-sm">घर या व्यापार स्थल में सुख-शांति हेतु वास्तु शांति पूजा।</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-b-4 border-deepRed transition duration-300">
+                    <div class="text-saffron text-4xl mb-4"><i class="fas fa-ring"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">समस्त मांगलिक पूजा</h3>
+                    <p class="text-sm text-gray-500 font-sans mb-3 uppercase tracking-wide">Complete Auspicious Puja</p>
+                    <p class="text-gray-600 text-sm">विवाह, गृह प्रवेश, मुंडन, नामकरण आदि सभी शुभ कार्य।</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                 <a href="#consultation" class="bg-deepRed text-white px-8 py-3 rounded-full font-bold hover:bg-red-900 transition shadow-lg inline-block">
+                    <i class="fas fa-calendar-alt mr-2"></i> पूजा बुक करें (Book Puja)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="py-16 bg-offWhite border-t border-saffron">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-saffron text-lg font-bold uppercase mb-2">परामर्श प्राप्त करें</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-deepRed mb-6">अपनी कुंडली का विश्लेषण करवाएं</h2>
+                    <p class="text-gray-700 mb-6 text-lg">
+                        यदि आप अपने जीवन में किसी समस्या का सामना कर रहे हैं, तो नीचे दिए गए फॉर्म को भरकर अपनी जन्म जानकारी भेजें। हम आपकी कुंडली का गहन अध्ययन कर आपको उचित उपाय बताएंगे।
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-gold">
+                        <h4 class="font-bold text-xl mb-4 text-deepRed">प्रक्रिया (Process):</h4>
+                        <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                            <li>फॉर्म में अपनी सही जानकारी भरें।</li>
+                            <li>'जानकारी भेजें' बटन पर क्लिक करें (यह सीधे WhatsApp पर जाएगा)।</li>
+                            <li>गुरुजी आपकी कुंडली का अध्ययन करेंगे।</li>
+                            <li>आपको फोन या मैसेज के माध्यम से उपाय बताए जाएंगे।</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-2xl relative">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-saffron to-deepRed rounded-t-xl"></div>
+                    <form id="whatsappForm" onsubmit="sendToWhatsapp(event)" class="space-y-4 font-sans">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">नाम (Name)</label>
+                                <input type="text" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-saffron">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">मोबाइल नंबर</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-saffron">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">जन्म तारीख</label>
+                                <input type="date" id="dob" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-saffron">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">जन्म समय</label>
+                                <input type="time" id="tob" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-saffron">
+                            </div>
+                             <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">जन्म स्थान</label>
+                                <input type="text" id="pob" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-saffron">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2">समस्या / प्रश्न</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-saffron" placeholder="अपनी समस्या लिखें..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 rounded hover:bg-green-700 transition flex justify-center items-center">
+                            <i class="fab fa-whatsapp text-xl mr-2"></i> जानकारी भेजें (WhatsApp)
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-deepRed">संपर्क करें (Contact Us)</h2>
+                <div class="w-24 h-1 bg-saffron mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3 space-y-4">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-saffron flex items-start">
+                        <div class="text-deepRed text-2xl mr-4 mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">वर्तमान पता</h4>
+                            <p class="text-gray-600">उज्जैन (मध्य प्रदेश)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-saffron flex items-start">
+                        <div class="text-deepRed text-2xl mr-4 mt-1"><i class="fas fa-home"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">स्थायी पता</h4>
+                            <p class="text-gray-600">आलोट, रतलाम (मध्य प्रदेश)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-saffron flex items-start">
+                        <div class="text-deepRed text-2xl mr-4 mt-1"><i class="fas fa-phone-volume"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">फोन नंबर</h4>
+                            <p class="text-gray-600"><a href="tel:+919343838789" class="hover:text-saffron">+91 9343838789</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-2/3 bg-white p-2 rounded-lg shadow-md h-80 md:h-auto">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117326.06208064567!2d75.71444645607371!3d23.16898747477549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39637469de00ff23%3A0x7f82abdf78a5243e!2sUjjain%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 0.5rem;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-royalBlue text-white py-8 border-t-4 border-gold">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4 text-gold">ज्योतिषाचार्य पं. निर्मल उपाध्याय</h3>
+            <p class="text-gray-400 text-sm mb-6 max-w-lg mx-auto">
+                वैदिक ज्योतिष और कर्मकांड के माध्यम से लोगों के जीवन में सकारात्मक ऊर्जा और शांति लाने के लिए समर्पित।
+            </p>
+            <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Jyotishacharya Pandit Nirmal Upadhyay. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Buttons -->
+    <a href="https://wa.me/919343838789" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 text-2xl flex items-center justify-center w-14 h-14 animate-bounce">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.getElementById('menu-btn').addEventListener('click', toggleMenu);
+
+        function sendToWhatsapp(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const dob = document.getElementById('dob').value;
+            const tob = document.getElementById('tob').value;
+            const pob = document.getElementById('pob').value;
+            const message = document.getElementById('message').value;
+
+            const text = `नमस्ते गुरुजी, %0Aमैं परामर्श लेना चाहता हूँ।%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*DOB:* ${dob}%0A*Time:* ${tob}%0A*Place:* ${pob}%0A*Problem:* ${message}`;
+            const whatsappUrl = `https://wa.me/919343838789?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
